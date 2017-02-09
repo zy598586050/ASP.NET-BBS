@@ -1,0 +1,5 @@
+F:\VS2010 网站\TNIT社区\TNIT\bin\TNIT.dll
+F:\VS2010 网站\TNIT社区\TNIT\bin\TNIT.pdb
+F:\VS2010 网站\TNIT社区\TNIT\obj\Debug\TNIT.dll
+F:\VS2010 网站\TNIT社区\TNIT\obj\Debug\TNIT.pdb
+F:\VS2010 网站\TNIT社区\TNIT\obj\Debug\TNIT.csprojResolveAssemblyReference.cache

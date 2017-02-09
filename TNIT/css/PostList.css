@@ -1,0 +1,129 @@
+.li{
+	width: 100%;
+	height: 1020px;
+}
+.li-left{
+	width: 73.5%;
+	height: 1000px;
+	float: left;
+	background: #ffffff;
+	border-radius: 5px;
+	border:1px solid #e6e6e6;
+}
+.li-left-a{
+	width: 97%;
+	height: 75px;
+	margin: auto;
+	border-radius: 5px;
+	border-bottom: 1px dotted #cdcdcd;
+}
+.li-left-a:hover{
+	background: rgb(250,250,250);
+}
+.li-left-b{
+	width: 96%;
+	height: 55px;
+	margin: auto;
+	position: relative;
+	top:9px;
+}
+.portrait{
+	position: relative;
+	top: 8px;
+	width: 43px;
+	height: 43px;
+	border-radius: 10px;
+	overflow: hidden;
+	float: left;
+}
+.title{
+	width: 90%;
+	height: 55px;
+	float: right;
+}
+.li-right{
+	width: 25%;
+	height: 1000px;
+	float: right;
+}
+.btn-clock{
+	width: 100%;
+	height: 100px;
+	background: #ffffff;
+	border:1px solid #e6e6e6;
+	border-radius: 5px;
+}
+.modular{
+	width: 100%;
+	height: 305px;
+	background: #ffffff;
+	margin-top: 10px;
+	border:1px solid #e6e6e6;
+	border-radius: 5px;
+}
+.codes{
+	width: 100%;
+	height: 300px;
+	background: #ffffff;
+	margin-top: 10px;
+	border:1px solid #e6e6e6;
+	border-radius: 5px;
+}
+.about{
+	width: 100%;
+	height: 200px;
+	background: #ffffff;
+	margin-top: 10px;
+	border-radius: 5px;
+	border:1px solid #e6e6e6;
+}
+.btn-clock-dk{
+	position: relative;
+	width: 85%;
+	height: 70px;
+	top: 15px;
+	color: #ffffff;
+	font-family: 'SimHei';
+	font-size: 20px;
+	margin: auto;
+	line-height: 70px;
+	text-align: center;
+	background: #a0eecc;
+	border-radius: 5px;
+}
+.btn-clock-dk:hover{
+	cursor:pointer;
+}
+.modular-title{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+.modular-title span{
+	margin-left: 20px;
+	font-size: 16px;
+}
+.modular-ls{
+	width: 49.6%;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	border-top: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+.modular-ls:hover{
+	background: #eee;
+}
+.about-nr{
+	width: 80%;
+	height: 120px;
+	margin: auto;
+}
+.about-nr-a{
+	width: 62px;
+	margin-bottom: 10px;
+	text-align: center;
+	border-right: 2px solid #eee;
+	float: left;
+}

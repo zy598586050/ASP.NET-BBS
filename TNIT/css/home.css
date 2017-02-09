@@ -1,0 +1,19 @@
+.lbt{
+	width:100%;
+	height:350px;
+	background: #ffe1a1;
+	border-radius: 10px;
+}
+.lbt-a{
+	width: 100%;
+	margin-top: 10px;
+	height: 200px;
+}
+.lbt-b{
+	width: 31.9%;
+	float: left;
+	height: 180px;
+	background: #a0e4f1;
+	border-radius: 7px;
+	margin-right: 20px;
+}

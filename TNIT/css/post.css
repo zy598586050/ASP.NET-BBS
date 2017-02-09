@@ -1,0 +1,93 @@
+.post-a{
+	width: 100%;
+	min-height: 290px;
+	background: #ffffff;
+	margin-bottom: 10px;
+	border:1px solid #dedede;
+	border-radius: 5px;
+}
+.lh{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.post-left{
+	width: 20%;
+	min-height: 290px;
+	background: #fbfbfb;
+	float: left;
+	border-radius: 5px 0 0 5px;
+}
+.post-left-portrait{
+	width: 120px;
+	height: 120px;
+	background: #fd6440;
+	margin: auto;
+	position: relative;
+	top: 20px;
+	border-radius: 7px;
+	overflow: hidden;
+}
+.n-a{
+	margin-top: 40px;
+	margin-left: 40px;
+}
+.n-b{
+	margin-left: 40px;
+}
+.post-right{
+	width: 79.9%;
+	min-height: 260px;
+	float: right;
+}
+.post-right-a{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+}
+.post-right-b{
+	width: 98%;
+	height: 180px;
+	border-bottom:1px dashed #cdcdcd;
+}
+.post-right-b-b{
+	width: 98%;
+	height: 210px;
+	border-bottom:1px dashed #cdcdcd;
+}
+.post-right-c{
+	width: 98%;
+	height: 40px;
+	line-height: 40px;
+}
+
+/**************************************/
+
+/*************************/
+.hf-a{
+  width: 95%;
+  height: 30px;
+  line-height: 30px;
+  margin: auto;
+}
+.hf-b{
+	width: 95%;
+	height: 100px;
+	margin-left: 20px;
+	border:1px solid #d7d7d7;
+	border-radius: 5px;
+}
+.hf-c{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 20px;
+	margin-top: 10px;
+	color: #fff;
+	text-align: center;
+	background: #555;
+	border-radius: 5px;
+}
+.hf-c:hover{
+	cursor:pointer;
+}
+/*************************/

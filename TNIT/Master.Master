@@ -1,0 +1,152 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="TNIT.Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" media="screen" />
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/master.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+	<script src='js/jquery-3.1.1.min.js'></script>
+	<title>TNIT技术社区</title>
+</head>
+<body>
+<form runat="server" id="form">
+    <div class="nav">
+    	<div class="nav-a">
+    		<img src="images/logo.png">
+    		<div class="nav-b">
+    			<div style="float: right;">
+    				<span style="float: right;margin-top: 15px;">
+                        <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click">登录</asp:LinkButton>
+						<span class="pipe">|</span>
+						<a href="Register.aspx" style="color: #6d6d6d;">注册</a>
+    				</span>
+                    <span style="float:right;margin-top:15px;margin-right:20px;" id="welcome" runat="server"></span>
+					<div>
+						<input class="search" id="ipt" runat="server" type="text" placeholder="搜索">
+					</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+	<div class="nav-top">
+		<ul class="nav-list">
+			<li><a href="Home.aspx">首页</a></li>
+			<li><a href="PostList.aspx">新帖</a></li>
+			<li><a href="Section.aspx">版块</a></li>
+			<li><a href="Download.aspx">下载</a></li>
+			<li><a href="About.aspx">关于我们</a></li>
+			<li style="float: right;"><asp:Button ID="Button2" runat="server" Text="搜索" 
+                    BorderStyle="None" style="color:#ffffff;background:none;cursor: pointer;" 
+                    onclick="Button2_Click" /></li>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="content-left">
+			<div class="moto">
+				<h5 style="margin-left: 10px;">
+				每日语录：心之所向，素履以往；生如逆旅，一苇以航。——七堇年
+				</h5>
+			</div>
+		</div>
+		<div class="content-right">
+           <!-- class="btn-post" onclick="window.open('Publish.aspx','_self')">发表新帖</div>-->
+            <asp:Button class="btn-post" ID="Button1" runat="server" Text="发表新帖" 
+                BorderStyle="None" onclick="Button1_Click" />
+		</div>
+	</div>
+
+	<div class="post">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+	
+	<div class="back-to-top">返回顶部</div>
+	<div class="nav-bottom">
+		<div class="nav-bottom-a">
+			<div style="float: left;">
+				<img style="vertical-align: middle;" src="images/footer_title.png">
+			</div>
+			<div class="nav-bottom-b">
+				<a href="">官方网站</a>
+				<span class="pipe">|</span>
+				<a href="">官方网站</a>
+				<span class="pipe">|</span>
+				<a href="">官方网站</a>
+				<span class="pipe">|</span>
+				<a href="">官方网站</a>
+				<span class="pipe">|</span>
+				<a href="">官方网站</a>
+			</div>
+			<div style="float: right;color: #7e7e7e;">
+				Copyright © 2016 TNIT
+			</div>
+		</div>
+		<div style="color: #7e7e7e;margin: 0 auto;width: 74%;text-align: center;">
+			京ICP备10046444号 | 京公网安备11010802020134号 | 京ICP证110507号
+		</div>
+	</div>
+</form>
+</body>
+<asp:contentplaceholder id="js" runat="server"></asp:contentplaceholder>
+<script type="text/javascript">
+    (function () {
+
+        var Dom = {
+            nav_top: $('.nav-top'),
+            back_to_top: $('.back-to-top'),
+            submit: $('#submit')
+        }
+
+        var Win = $(window);
+        var Doc = $(document);
+
+        Win.scroll(function () {
+            if (Win.scrollTop() >= 100) {
+                Dom.nav_top.css('position', 'fixed');
+                Dom.nav_top.css('top', 0);
+            } else {
+                Dom.nav_top.css('position', 'absolute');
+                Dom.nav_top.css('top', 100);
+            }
+        });
+
+        Dom.back_to_top.click(function () {
+            $('body').animate({
+                scrollTop: 0
+            }, 800);
+        });
+
+        Win.scroll(function () {
+            if (Win.scrollTop() > Win.height()) {
+                Dom.back_to_top.show();
+            } else {
+                Dom.back_to_top.hide();
+            }
+        });
+
+        Dom.submit.click(function () {
+            $.ajax({
+                type: "post",
+                url: "Publish.aspx/submit",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    alert(data.d);
+                },
+                error: function (err) {
+                }
+            })
+        });
+
+        Win.trigger('scroll');
+
+    })();
+</script>
+</html>

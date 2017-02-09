@@ -1,0 +1,35 @@
+.abt{
+	width: 100%;
+	height: 500px;
+	background: #ffffff;
+	border-radius: 5px;
+	border:1px solid #e6e6e6;
+	margin-bottom: 10px;
+}
+.abt-a{
+	width: 18%;
+	height: 20%;
+	margin: auto;
+}
+.abt-b{
+	width: 18%;
+	height: 10%;
+	font-size: 25px;
+	margin: auto;
+}
+.abt-c{	
+	width: 70%;
+	height: 40%;
+	margin: auto;
+}
+.btn{
+	width: 100px;
+	height: 45px;
+	border-radius: 5px;
+	border:1px solid #e6e6e6;
+	margin-left: 45%;
+	margin-top: 50px;
+	cursor:pointer;
+	background: #555555;
+	color: #ffffff;
+}

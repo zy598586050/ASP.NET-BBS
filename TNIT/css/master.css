@@ -1,0 +1,134 @@
+.nav{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	background: rgb(249,249,249);
+}
+.nav-a{
+	width: 74%;
+	height: 80px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.nav-a img{
+	height: 80px;
+}
+.nav-b{
+	width: 35%;
+	height: 80px;
+	float: right;
+}
+.search{
+	margin-top: 10px;
+	width: 250px;
+	height: 25px;
+	border-radius:5px;
+	border: 2px solid #555;
+	padding-left: 10px;
+}
+.nav-top{
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	height: 50px;
+	background: #555;
+	z-index: 9999;
+}
+.nav-list{
+	list-style: none;
+	margin: 0 13% 0 13%;
+}
+.nav-list li{
+	float: left;
+	width: 80px;
+	text-align: center;
+	line-height: 50px;
+}
+.nav-list li:hover{
+	background: #2f2f2f;
+}
+.nav-list li a{
+	color: #fff;
+}
+.content{
+	width: 74%;
+	height: 220px;
+	margin: 0 auto;
+	background: rgb(247,247,247);
+}
+.content-left{
+	width: 75%;
+	height: 220px;
+	float: left;
+}
+.content-right{
+	width: 25%;
+	height: 200px;
+	float: right;
+}
+.post{
+	width: 74%;
+	margin: auto;
+}
+.moto{
+	width: 98%;
+	height: 50px;
+	margin-top: 160px;
+	background: #ffffff;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	line-height: 50px;
+}
+.btn-post{
+	width: 100%;
+	height: 50px;
+	margin-top: 160px;
+	background: #555;
+	border-radius: 5px;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+}
+.btn-post:hover{
+	cursor:pointer;
+}
+.back-to-top{
+	position: fixed;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	bottom: 30px;
+	right: 30px;
+	z-index: 9999;
+	border: 1px solid #888;
+	background: #2f2f2f;
+	color: #888;
+}
+.back-to-top:hover{
+	cursor:pointer;
+}
+.nav-bottom{
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	background: #2f2f2f;
+}
+.nav-bottom-a{
+	width: 74%;
+	height: 25px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.nav-bottom-b{
+	display: inline;
+	margin-left: 16%;
+}
+.nav-bottom-b a{
+	color: #ccc;
+}
+.pipe{
+	margin: 0 5px;
+	color: #ccc;
+}
